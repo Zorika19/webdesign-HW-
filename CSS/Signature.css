@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+::selection {
+    background: #180C0C;
+    color: #f8f9fa;
+}
+
+:root {
+    --black-color: black;
+    --milk-color: #f8f9fa;
+    --gray-color: #808080;
+    --gold-color: #e2b768;
+    --matcha-color: #AAC75E;
+    --letter-color: #908376;
+    --coffee-color: #742F06;
+    --border-color: rgba(255, 255, 255, 0.2);
+    --header-color: #B8933D;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #3C3C3C;
+    font-family: "Poppins", sans-serif;
+
+}
+
+/*header section*/
+header {
+    padding: 10px 0px;
+    background: rgb(24, 12, 12);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0.5px 3px var(--milk-color);
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav .logo {
+    color: var(--gray-color);
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+nav .search {
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+nav i {
+    color: var(--milk-color);
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+nav .bar {
+    display: flex;
+    gap: 3rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.bar a {
+    color: var(--milk-color);
+    padding: 20px 20px;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+
+.bar a:hover {
+    background: var(--milk-color);
+    color: var(--brown-color);
+}
+
+.bar .active {
+    background: var(--milk-color);
+    color: var(--brown-color);
+}
+
+
+/*product section */
+#product_container {
+    position: relative;
+}
+
+
+.container_left {
+    margin-top: 30px;
+    border-right: 1px solid var(--border-color);
+    /* background: cyan; */
+    width: 75%;
+}
+
+.container_left .center {
+    text-align: center;
+}
+
+.container_left h2 {
+    color: var(--gold-color);
+    font-size: 2.4rem;
+}
+
+.container_left .card {
+    /* background: white; */
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding-left: 180px;
+    margin-top: 3rem;
+}
+
+.header {
+    line-height: 100px;
+}
+
+.header h3 {
+
+    font-size: 3rem !important;
+}
+
+.card .letter {
+    text-align: center;
+}
+
+.card img {
+    width: 30%;
+    border-radius: 20%;
+    box-shadow: 1px 1px 5px var(--gray-color);
+}
+
+.card h3 {
+    font-size: 2rem;
+    color: var(--header-color);
+}
+
+.container_left .explain {
+    line-height: 30px;
+    width: 70%;
+    /* background: cyan; */
+    color: var(--letter-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 40px 0 0 150px;
+    line-height: 40px;
+}
+
+.price {
+    margin-left: 40px;
+    /* background: blue; */
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price .about {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--matcha-color);
+}
+
+.price .total {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: var(--milk-color);
+}
+
+.container_right {
+    /* background: blue; */
+    width: 25%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.container_right .card {
+    border-bottom: 3px solid var(--border-color);
+    margin-top: 50px;
+}
+
+.container_right .center {
+    color: var(--gold-color);
+    font-size: 2.4rem;
+}
+
+
+.container_right .card img {
+    box-shadow: 1px 1px 5px var(--gray-color);
+    border-radius: 50%;
+    width: 200px;
+    height: 150px;
+    transition: 0.4s !important;
+}
+
+
+.container_right h2 {
+    color: var(--letter-color);
+    transition: 0.4s;
+    margin-bottom: 20px;
+}
+
+.container_right a {
+    text-decoration: none;
+}
+
+.container_right h2.name:hover {
+    transform: scale(1.03);
+    color: black;
+}
+
+.card img.target:hover {
+    transform: scale(1.03);
+}
+
+
+
+.final2 {
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.final2 a {
+    text-decoration: none;
+}
+
+.final2 p {
+    font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.final2 p:hover {
+    color: var(--milk-color);
+}
+
+
+/*footer section*/
+footer {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    border-top: 3px solid var(--border-color);
+}
+
+footer p {
+    font-weight: bold;
+}
+
+nav .fa {
+    display: none;
+}
+
+/*responsive section*/
+@media (max-width:1100px) {
+    .container_left .center {
+        font-size: 2rem;
+    }
+
+    .container_left .card {
+        gap: 80px;
+        padding-left: 100px;
+        margin-top: 3rem;
+    }
+
+    .container_left .card .header {
+        line-height: 70px;
+    }
+
+    .header h3 {
+        font-size: 2rem !important;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+
+    .container_left .explain {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin: 40px 0 0 100px;
+        line-height: 30px;
+    }
+
+    .price .about {
+        font-size: 1.3rem;
+    }
+
+    .price .total {
+        font-size: 1.5rem;
+    }
+
+    .price {
+        margin-left: 20px;
+    }
+
+    .container_right .center {
+        font-size: 2rem;
+    }
+
+    .container_right .card img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .container_right .card .name {
+        font-size: 1.4rem;
+    }
+
+    .final2 p {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:990px) {
+
+    nav .logo {
+        font-size: 1.6rem;
+    }
+
+    nav i {
+        font-size: 1.2rem;
+    }
+
+    nav .bar {
+        gap: 10px;
+    }
+
+    nav .bar li {
+        font-size: 1rem;
+    }
+
+    nav .search {
+        font-size: .85rem;
+    }
+}
+
+@media (max-width: 550px) {
+    nav .logo {
+        font-size: 1.4rem;
+    }
+
+    nav i {
+        font-size: 1.2rem;
+    }
+
+    nav .search {
+        font-size: .85rem;
+    }
+
+    nav .bar {
+        display: none;
+    }
+
+    nav .fa {
+        display: block;
+    }
+
+    nav i {
+        font-size: 1.1rem;
+    }
+
+    .container_left {
+        width: 100%;
+    }
+
+    .container_left .center {
+        font-size: 1.8rem;
+    }
+
+    .container_left .card {
+        gap: 50px;
+        padding-left: 50px;
+        margin-top: 3rem;
+    }
+
+    .container_left .card .header {
+        line-height: 70px;
+    }
+
+    .header h3 {
+        font-size: 2rem !important;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+
+    .container_left .explain {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin: 40px 0 0 50px;
+        line-height: 30px;
+    }
+
+    .price .about {
+        font-size: 1.1rem;
+    }
+
+    .price .total {
+        font-size: 1.3rem;
+    }
+
+    .price {
+        margin-left: 0px;
+        margin-bottom: 900px;
+    }
+
+    .container_right {
+        width: 100%;
+        top: 1200px;
+    }
+
+    .container_right .center {
+        font-size: 2rem;
+    }
+
+    .container_right .card img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .container_right .card .name {
+        font-size: 1.4rem;
+    }
+
+    .final2 p {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Zori</a>
+
+            <div>
+                <input type="text" placeholder="Search" class="search">
+                <a href="shop.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <i class="fa-solid fa-basket-shopping"></i>
+
+            <ul class="bar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Available</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+            <i class="fa fa-bars"></i>
+        </nav>
+    </header>
+
+    <main>
+        <section id="slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="image/3.jpg"></div>
+                    <div class="swiper-slide"><img src="image/2.jpg"></div>
+                    <div class="swiper-slide"><img src="image/5.jpg"></div>
+                    <div class="swiper-slide"><img src="image/1.jpg"></div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+        <section id="about_us">
+            <div class="up">
+                <div class="Title" data-aos="fade-right">
+                    <h2>Our Signature</h2>
+                    <div class="heading1" data-aos="fade-right">
+                        <h3 class="ex">EXPRESSO </h3>
+                        <h3 class="and">&</h3>
+                        <h3 class="mt">MATCHA</h3>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="image/6.jpg" data-aos="fade-right">
+                    <div class="explain" data-aos="fade-left">
+                        <i>
+                            <p class="heading">
+                                One Sip. Two Worlds.
+                            </p>
+                        </i>
+                        <p class="following">
+                            Why choose between coffee and matcha when you can have both? Experience the bold kick of
+                            espresso balanced with the smooth, refreshing taste of matcha. One beautiful blend, two
+                            unforgettable flavors—made for those who love to try something different.
+                        </p>
+                        <a href="Html/individual/Signature.html"><button class="Matcha">Details</button></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <section id="container">
+            <div class="cardflow1" data-aos="fade-up" data-aos-delay="100">
+                <a href="Html/individual/Cappuccino.html">
+                    <div class="image">
+                        <img src="image/hot/image1.jpg" class="target">
+                    </div>
+
+                    <div class="letters">
+                        <h2>Cappuccino</h2>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="cardflow" data-aos="fade-up" data-aos-delay="150">
+                <a href="Html/individual/Americano.html">
+                    <div class="image">
+                        <img src="image/hot/image2.jpg" class="target">
+                    </div>
+
+                    <div class="letters">
+                        <h2>Americano</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cardflow" data-aos="fade-up" data-aos-delay="200">
+                <a href="Html/individual/Latte.html">
+                    <div class="image">
+                        <img src="image/hot/image3.jpg" class="target">
+                    </div>
+
+                    <div class="letters">
+                        <h2>Latte</h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cardflow2" data-aos="fade-up" data-aos-delay="250">
+                <a href="Html/individual/honey.html">
+                    <div class="image">
+                        <img src="image/matcha/honey.jpg" class="target">
+                    </div>
+
+                    <div class="letters">
+                        <h2>Honey Matcha</h2>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <div class="final1">
+            <div class="final2">
+                <a href="shop.html">
+                    <p>View More</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Thank for your time.Enjoy your life.
+        </p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            loop: true,
+            autoplay: { delay: 2500 },
+            speed: 1500,
+            effect: 'fade',
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+</body>
+
+</html>

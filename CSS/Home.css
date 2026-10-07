@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+::selection {
+    background: #180C0C;
+    color: #f8f9fa;
+}
+
+:root {
+    --black-color: black;
+    --milk-color: #f8f9fa;
+    --gray-color: #808080;
+    --gold-color: #e2b768;
+    --matcha-color: #AAC75E;
+    --letter-color: #908376;
+    --coffee-color: #742F06;
+    --border-color: rgba(255, 255, 255, 0.2);
+    --header-color: #B8933D;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #3C3C3C;
+    font-family: "Poppins", sans-serif;
+}
+
+/*header section*/
+header {
+    padding: 10px 0px;
+    background: rgb(24, 12, 12);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0.5px 3px var(--milk-color);
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav .logo {
+    display: block;
+    color: var(--gray-color);
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+nav .search {
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+nav i {
+    color: var(--milk-color);
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+nav .bar {
+    display: flex;
+    gap: 3rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.bar a {
+    color: var(--milk-color);
+    padding: 20px 20px;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+
+.bar a:hover {
+    background: var(--milk-color);
+    color: var(--brown-color);
+}
+
+.bar .active {
+    background: var(--milk-color);
+    color: var(--brown-color);
+}
+
+
+/*  slider section */
+.swiper {
+    width: 100%;
+    height: 50%;
+}
+
+.swiper-slide {
+    background: #444;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    border-radius: 40%;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
+/* about us section */
+.up {
+    border-bottom: 2px solid var(--border-color);
+    width: 100%;
+    padding: 30px 0 0 80px;
+}
+
+.up .Title {
+    /* background: blue; */
+    width: 29%;
+    text-align: center;
+    padding: 10px;
+    line-height: 50px;
+}
+
+.Title h2 {
+    /* background: red; */
+    color: var(--gold-color);
+    font-size: 2.5rem;
+}
+
+.heading1 {
+    /* background: cyan; */
+    display: flex;
+    gap: 10px;
+}
+
+.Title h3.ex {
+    font-size: 2.3rem;
+    color: var(--coffee-color);
+}
+
+.Title h3.and {
+    font-size: 2.3rem;
+    color: var(--black-color);
+}
+
+.Title h3.mt {
+    font-size: 2.3rem;
+    color: var(--matcha-color);
+}
+
+.card {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+}
+
+.card img {
+    box-shadow: 1px 1px 5px var(--gray-color);
+    border-radius: 20%;
+    width: 30%;
+}
+
+.card .explain {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.card .heading {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--header-color);
+    line-height: 100px;
+}
+
+.card .following {
+    width: 90%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--letter-color);
+    line-height: 35px;
+}
+
+
+.card button {
+    border: 2px solid var(--border-color);
+    color: var(--milk-color);
+    font-weight: bold;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 1.5rem;
+    width: 20%;
+    margin-top: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: var(--gray-color);
+    color: black;
+}
+
+#container {
+    margin-left: 7rem;
+    width: 85%;
+    padding: 5rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.cardflow .image {
+    border-right: 2px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+
+}
+
+.image img {
+    box-shadow: 1px 1px 5px var(--gray-color);
+    border-radius: 50%;
+    width: 230px;
+    height: 180px;
+    transition: 0.4s;
+}
+
+
+
+.letters h2 {
+    color: var(--letter-color);
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    margin-top: 10px;
+    transition: 0.4s;
+}
+
+.cardflow a {
+    text-decoration: none;
+}
+
+.letters h2:hover {
+    transform: scale(1.03);
+    color: black;
+}
+
+img.target:hover {
+    transform: scale(1.03);
+}
+
+.cardflow2 a {
+    text-decoration: none;
+}
+
+.cardflow2 .image {
+    border-right: 3px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+
+}
+
+.cardflow1 a {
+    text-decoration: none;
+}
+
+.cardflow1 .image {
+    border-right: 2px solid var(--border-color);
+    border-left: 3px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+}
+
+.final1 {
+    display: flex;
+    justify-content: center;
+}
+
+.final2 {
+    width: 10%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.final2 a {
+    text-decoration: none;
+}
+
+.final2 p {
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.final2 p:hover {
+    color: var(--milk-color);
+}
+
+
+/*footer section*/
+footer {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    border-top: 3px solid var(--border-color);
+}
+
+footer p {
+    font-weight: bold;
+}
+
+nav .fa {
+    display: none;
+}
+
+/*Responsive section*/
+@media (max-width:1200px) {
+    #slider {
+        width: 100%;
+        height: 100%;
+    }
+
+    #container {
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 7rem;
+        padding: 6rem 4rem;
+    }
+
+    .cardflow {
+        margin-bottom: 30px;
+    }
+
+    .Title h2 {
+        font-size: 2rem;
+    }
+
+    .heading1 {
+        display: flex;
+        gap: 7px;
+    }
+
+    .Title h3.ex {
+        font-size: 1.9rem;
+        color: var(--coffee-color);
+    }
+
+    .Title h3.and {
+        font-size: 1.9rem;
+        color: var(--black-color);
+    }
+
+    .Title h3.mt {
+        font-size: 1.9rem;
+        color: var(--matcha-color);
+    }
+
+    .card .explain {
+        margin-top: -20px;
+        margin-left: 30px;
+    }
+
+    .cardflow .image {
+        border-right: 3px solid var(--border-color);
+        border-left: 3px solid var(--border-color);
+    }
+
+    .cardflow1 .image {
+        border-right: 0px solid var(--border-color);
+        border-left: 3px solid var(--border-color);
+    }
+
+    .cardflow2 .image {
+        border-right: 3px solid var(--border-color);
+        border-left: 0px solid var(--border-color);
+    }
+}
+
+@media(max-width:990px) {
+
+    nav .logo {
+        font-size: 1.6rem;
+    }
+
+    nav i {
+        font-size: 1.2rem;
+    }
+
+    nav .bar {
+        gap: 10px;
+    }
+
+    nav .bar li {
+        font-size: 1rem;
+    }
+
+    nav .search {
+        font-size: .85rem;
+    }
+
+    .final2 {
+        font-size: .85rem;
+        width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .Title h2 {
+        font-size: 2rem;
+    }
+
+    .heading1 h3 {
+        font-size: 1.3rem;
+        margin-left: 0px;
+    }
+
+    .card img {
+        width: 290px;
+    }
+
+    .card .explain {
+        margin-top: -50px;
+        margin-left: 30px;
+    }
+
+    .explain .heading {
+        font-size: 1.8rem;
+        padding-top: 20px;
+    }
+
+    .explain .following {
+        font-size: 1.1rem;
+    }
+
+    .card button {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width:550px) {
+    nav .logo {
+        font-size: 1.4rem;
+    }
+
+    nav i {
+        font-size: 1.2rem;
+    }
+
+    nav .search {
+        font-size: .85rem;
+    }
+
+    nav .bar {
+        display: none;
+    }
+
+    nav .fa {
+        display: block;
+    }
+
+    nav i {
+        font-size: 1.1rem;
+    }
+
+    .card img {
+        width: 180px;
+    }
+
+    .Title h2 {
+        font-size: 1.7rem;
+    }
+
+    .heading1 {
+        display: flex;
+        gap: 5px;
+    }
+
+    .up {
+        padding: 10px 0 0 20px;
+    }
+
+    .up .Title {
+        width: 40%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .Title h3.ex {
+        font-size: 1.4rem;
+        color: var(--coffee-color);
+    }
+
+    .Title h3.and {
+        font-size: 1.4rem;
+        color: var(--black-color);
+    }
+
+    .Title h3.mt {
+        font-size: 1.4rem;
+        color: var(--matcha-color);
+    }
+
+    .card .heading {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: var(--header-color);
+        line-height: 50px;
+        width: 100%;
+    }
+
+
+    .card .following {
+        width: 100%;
+        font-weight: bold;
+        font-size: 1rem;
+        color: var(--letter-color);
+        line-height: 25px;
+    }
+
+    .card button {
+        text-align: center;
+        padding: 10px 30px 10px 30px;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #container {
+        padding: 5rem 4rem;
+        margin-left: 45px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardflow2 .image {
+        border-right: 3px solid var(--border-color);
+        border-left: 3px solid var(--border-color);
+    }
+
+    .cardflow1 .image {
+        border-right: 3px solid var(--border-color);
+        border-left: 3px solid var(--border-color);
+    }
+
+    .cardflow1 {
+        margin-bottom: 30px;
+    }
+
+    .image img {
+        width: 160px;
+        height: 120px;
+    }
+
+    .letters {
+        font-size: .9rem;
+    }
+
+    .final2 p {
+        font-size: 1rem;
+    }
+}

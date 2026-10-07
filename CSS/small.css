@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+::selection {
+    background: #180C0C;
+    color: #f8f9fa;
+}
+
+:root {
+    --black-color: black;
+    --milk-color: #f8f9fa;
+    --gray-color: #808080;
+    --gold-color: #e2b768;
+    --matcha-color: #AAC75E;
+    --letter-color: #908376;
+    --coffee-color: #742F06;
+    --border-color: rgba(255, 255, 255, 0.2);
+    --header-color: #B8933D;
+    --combo-colo: #F5E6C8;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #3C3C3C;
+    font-family: "Poppins", sans-serif;
+
+}
+
+/*header section*/
+header {
+    padding: 10px 0px;
+    background: rgb(24, 12, 12);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0.5px 3px var(--milk-color);
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav .logo {
+    color: var(--gray-color);
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+nav .search {
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+nav i {
+    color: var(--milk-color);
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+nav .bar {
+    display: flex;
+    gap: 3rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.bar a {
+    color: var(--milk-color);
+    padding: 20px 20px;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+
+.bar a:hover {
+    background: var(--milk-color);
+    color: var(--brown-color);
+}
+
+.bar .active {
+    background: var(--milk-color);
+    color: var(--brown-color);
+}
+
+
+/*product section */
+p.title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--gold-color);
+    margin: 50px 0 30px 0;
+}
+
+.explain {
+    width: 87%;
+    background: #444444;
+    margin-top: 100px;
+    margin-left: 100px;
+    border-radius: 10%;
+    box-shadow: 1px 1px 5px var(--gray-color);
+}
+
+.up {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid var(--border-color);
+}
+
+.up img {
+    width: 550px;
+    height: 450px;
+    padding: 90px;
+    border-radius: 30%;
+
+}
+
+.letter h2 {
+    padding-right: 100px;
+    line-height: 140px;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: var(--header-color);
+}
+
+p.attraction {
+    color: var(--letter-color) !important;
+}
+
+
+.letter p {
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: var(--milk-color);
+}
+
+
+.middle {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.middle p {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #F5E6C8;
+}
+
+.box {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box .card img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20%;
+}
+
+.card p {
+    color: var(--letter-color);
+}
+
+p.last {
+    font-size: 1.5rem;
+    color: var(--black-color);
+    padding-bottom: 10px;
+}
+
+
+#container {
+    margin-left: 7rem;
+    width: 85%;
+    padding: 5rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.cardflow .image {
+    border-right: 2px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+
+}
+
+.image img {
+    box-shadow: 1px 1px 5px var(--gray-color);
+    border-radius: 50%;
+    width: 230px;
+    height: 180px;
+    transition: 0.4s;
+}
+
+
+
+.letters h2 {
+    font-size: 1.6rem;
+    color: var(--letter-color);
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    margin-top: 10px;
+    transition: 0.4s;
+}
+
+.cardflow a {
+    text-decoration: none;
+}
+
+.letters h2:hover {
+    transform: scale(1.02);
+}
+
+img.target:hover {
+    transform: scale(1.02);
+}
+
+.cardflow2 a {
+    text-decoration: none;
+}
+
+.cardflow2 .image {
+    border-right: 3px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+
+}
+
+.cardflow1 a {
+    text-decoration: none;
+}
+
+.cardflow1 .image {
+    border-right: 2px solid var(--border-color);
+    border-left: 3px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+}
+
+.final1 {
+    display: flex;
+    justify-content: center;
+}
+
+.final2 {
+    width: 10%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.final2 a {
+    text-decoration: none;
+}
+
+.final2 p {
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.final2 p:hover {
+    color: var(--milk-color);
+}
+
+nav .fa {
+    display: none;
+}
+
+
+
+/*footer section*/
+footer {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    border-top: 3px solid var(--border-color);
+}
+
+footer p {
+    font-weight: bold;
+}
+
+
+/*responsive section*/
+@media (max-width:1100px) {
+    .explain {
+        width: 100%;
+        background: #444444;
+        margin: 100px 50px 0px 0px;
+    }
+
+    .up {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .up img {
+        width: 420px;
+        height: 370px;
+        padding: 90px;
+        border-radius: 40%;
+    }
+
+    .letter h2 {
+        font-size: 2rem;
+    }
+
+    p.attraction {
+        font-size: 1.4rem !important;
+    }
+
+    .letter p {
+        line-height: 40px;
+        font-size: 1.6rem;
+    }
+
+    p.last {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 1.5rem;
+    }
+
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 4rem;
+        padding: 6rem 4rem;
+    }
+
+    .cardflow .image {
+        border-right: 3px solid var(--border-color);
+        border-left: 3px solid var(--border-color);
+    }
+
+    .cardflow1 .image {
+        border-right: 0px solid var(--border-color);
+        border-left: 3px solid var(--border-color);
+    }
+
+    .cardflow2 .image {
+        border-right: 3px solid var(--border-color);
+        border-left: 0px solid var(--border-color);
+    }
+}
+
+@media(max-width:990px) {
+
+    nav .logo {
+        font-size: 1.6rem;
+    }
+
+    nav i {
+        font-size: 1.2rem;
+    }
+
+    nav .bar {
+        gap: 10px;
+    }
+
+    nav .bar li {
+        font-size: 1rem;
+    }
+
+    nav .search {
+        font-size: .85rem;
+    }
+
+    .final2 {
+        font-size: .85rem;
+        width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .up img {
+        padding: 110px;
+    }
+
+    .letter h2 {
+        line-height: 50px;
+    }
+
+    p.attraction {
+        font-size: 1.3rem !important;
+    }
+
+    .letter p {
+        line-height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .box .card img {
+        width: 250px;
+        height: 200px;
+    }
+
+    p.last {
+        font-size: 1.3rem;
+    }
+
+    .card p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    nav .logo {
+        font-size: 1.4rem;
+    }
+
+    nav i {
+        font-size: 1.2rem;
+    }
+
+    nav .search {
+        font-size: .85rem;
+    }
+
+    nav .bar {
+        display: none;
+    }
+
+    nav .fa {
+        display: block;
+    }
+
+    nav i {
+        font-size: 1.1rem;
+    }
+
+    .up {
+        border-bottom: 3px solid var(--border-color);
+        width: 100%;
+        display: grid;
+    }
+
+    .up img {
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .up .letter {
+        margin: -100px 0px 0px 10px;
+    }
+
+    .middle .last {
+        font-size: 1.2rem;
+    }
+
+    .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box .card {
+        margin-bottom: 10px;
+    }
+
+    .box .card img {
+        width: 200px;
+        height: 150px;
+    }
+
+    #container {
+        padding: 5rem 4rem;
+        margin-left: 45px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardflow2 .image {
+        border-right: 3px solid var(--border-color);
+        border-left: 3px solid var(--border-color);
+    }
+
+    .cardflow1 .image {
+        border-right: 3px solid var(--border-color);
+        border-left: 3px solid var(--border-color);
+    }
+
+    .cardflow1 {
+        margin-bottom: 30px;
+    }
+
+    .image img {
+        width: 160px;
+        height: 120px;
+    }
+
+    .letters {
+        font-size: .9rem;
+    }
+
+    .final2 p {
+        font-size: 1rem;
+    }
+}
